@@ -4,7 +4,7 @@ import Button from './Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser, faUsers } from '@fortawesome/free-solid-svg-icons';
 
-const Page1 = () => {
+const Page3 = () => {
   const currentPage = usePageState();
   const dispatch = usePageDispatch();
 
@@ -41,4 +41,4 @@ const Page1 = () => {
   );
 };
 
-export default Page1;
+export default Page3;

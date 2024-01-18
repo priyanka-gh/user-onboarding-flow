@@ -4,7 +4,7 @@ import Button from './Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
-const Page1 = () => {
+const Page4 = () => {
   const { name } = usePageState();
 
   const dispatch = usePageDispatch();
@@ -22,4 +22,4 @@ const Page1 = () => {
   );
 };
 
-export default Page1;
+export default Page4;

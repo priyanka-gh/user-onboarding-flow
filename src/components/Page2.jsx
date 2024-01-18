@@ -2,7 +2,7 @@ import React from 'react';
 import { usePageState, usePageDispatch } from './PageStateContext';
 import Button from './Button';
 
-const Page1 = () => {
+const Page2 = () => {
   const currentPage = usePageState();
   const dispatch = usePageDispatch();
 
@@ -33,4 +33,4 @@ const Page1 = () => {
   );
 };
 
-export default Page1;
+export default Page2;
