@@ -27,7 +27,7 @@ const Page2 = () => {
             <input placeholder='Example' className='p-2 font-normal border-l-2 border-gray-100 focus:outline-none rounded-md'></input>
           </div>
         </div>
-        <Button onClick={() => dispatch({ type: 'INCREMENT_PAGE', payload: 4 })} />
+        <Button/>
       </div>
     </div>
   );

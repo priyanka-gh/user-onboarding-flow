@@ -17,7 +17,7 @@ const Page4 = () => {
             max-md:text-xl'>Congratulations, {name}!</h1>
         <h6 className='font-medium text-gray-500'>You have compleed onboarding, you can star using the Eden!</h6>
       </div>
-      <Button onClick={() => dispatch({ type: 'INCREMENT_PAGE', payload: 4 })} />
+      <Button/>
     </div>
   );
 };

@@ -10,12 +10,12 @@ const FormPage = () => {
 
   return (
     <div>
-      <form>
+      {/* <form> */}
         {page === 1 && <Page1 />}
         {page === 2 && <Page2 />}
         {page === 3 && <Page3 />}
         {page === 4 && <Page4 />}
-      </form>
+      {/* </form> */}
     </div>
   );
 };

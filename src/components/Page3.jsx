@@ -35,7 +35,7 @@ const Page3 = () => {
             <h6 className='text-gray-500'>Wikis, docs, tasks & projects, all in one place.</h6>
           </div>
         </div>
-        <Button onClick={() => dispatch({ type: 'INCREMENT_PAGE', payload: 4 })} />
+        <Button />
       </div>
     </div>
   );

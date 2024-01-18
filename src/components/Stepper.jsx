@@ -6,7 +6,6 @@ const Stepper = () => {
   const totalPages = 4;
 
   const dispatch = usePageDispatch();
-
   return (
     <div>
         <ul className="flex items-center">

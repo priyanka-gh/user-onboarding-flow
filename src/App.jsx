@@ -1,5 +1,5 @@
 import React from 'react'
-import Onboarding from './components/Onboarding'
+import Onboarding from './pages/Onboarding'
 import { PageProvider } from './components/PageStateContext'
 
 const App = () => {

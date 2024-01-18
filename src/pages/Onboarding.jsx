@@ -1,7 +1,7 @@
 import React from 'react';
-import { usePageState, usePageDispatch } from './PageStateContext';
-import FormPage from './FormPage';
-import Stepper from './Stepper';
+import { usePageState, usePageDispatch } from '../components/PageStateContext';
+import FormPage from '../components/FormPage';
+import Stepper from '../components/Stepper';
 import logo from "../assets/logo.png";
 
 const Onboarding = () => {
