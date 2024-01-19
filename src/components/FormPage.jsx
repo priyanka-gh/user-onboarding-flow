@@ -1,21 +1,19 @@
 import React from 'react';
-import { usePageState } from './PageStateContext';
-import Page1 from './Page1';
-import Page2 from './Page2';
-import Page3 from './Page3';
-import Page4 from './Page4';
+import { usePageState } from '../context/PageStateContext';
+import PersonalDetails from './PersonalDetails';
+import WorkspaceSetupPage from './WorkspaceSetupPage';
+import PlanSelection from './PlanSelection';
+import ConfirmationPage from './ConfirmationPage';
 
 const FormPage = () => {
   const {page} = usePageState();
 
   return (
     <div>
-      {/* <form> */}
-        {page === 1 && <Page1 />}
-        {page === 2 && <Page2 />}
-        {page === 3 && <Page3 />}
-        {page === 4 && <Page4 />}
-      {/* </form> */}
+        {page === 1 && <PersonalDetails />}
+        {page === 2 && <WorkspaceSetupPage />}
+        {page === 3 && <PlanSelection />}
+        {page === 4 && <ConfirmationPage />}
     </div>
   );
 };

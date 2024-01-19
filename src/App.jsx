@@ -1,6 +1,6 @@
 import React from 'react'
 import Onboarding from './pages/Onboarding'
-import { PageProvider } from './components/PageStateContext'
+import { PageProvider } from './context/PageStateContext'
 
 const App = () => {
   return (

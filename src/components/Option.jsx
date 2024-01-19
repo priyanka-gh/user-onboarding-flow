@@ -6,23 +6,23 @@ const Option = ({ optionNumber, selected, onSelect, title, description }) => {
   return (
     <div
       className={`flex flex-col p-4 gap-4 rounded-md ${
-        selected ? 'border border-[#653fa1]' : 'border-2'
+        selected ? 'border border-colorPurple' : 'border-2 border-gray'
       }`}
       onClick={() => onSelect(optionNumber)}
     >
       {optionNumber === 1 ? (
         <FontAwesomeIcon
           icon={faUser}
-          className={`text-[20px] ${selected ? 'text-[#653fa1]' : 'text-gray-500'}`}
+          className={`text-[20px] ${selected ? 'text-colorPurple' : 'text-darkestGray'}`}
         />
       ) : (
         <FontAwesomeIcon
           icon={faUsers}
-          className={`text-[20px] ${selected ? 'text-[#653fa1]' : 'text-gray-500'}`}
+          className={`text-[20px] ${selected ? 'text-colorPurple' : 'text-darkestGray'}`}
         />
       )}
-      <h6 className='font-bold'>{title}</h6>
-      <h6 className='text-gray-500'>{description}</h6>
+      <h6 className='font-bold text-darkestGray'>{title}</h6>
+      <h6 className='text-darkerGray'>{description}</h6>
     </div>
   );
 };

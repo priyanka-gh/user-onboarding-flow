@@ -1,5 +1,5 @@
 import React from 'react';
-import { usePageState, usePageDispatch } from './PageStateContext';
+import { usePageState, usePageDispatch } from '../context/PageStateContext';
 
 const Button = ({ disabled }) => {
   const { page, name } = usePageState();
@@ -8,7 +8,7 @@ const Button = ({ disabled }) => {
   return (
     <div>
       <button
-        className={`bg-[#653fa1] p-3 w-full text-white rounded-md ${disabled ? 'opacity-50 cursor-not-allowed' : ''}`}
+        className={`text-white bg-colorPurple p-3 min-w-full rounded-md ${disabled ? 'opacity-50 cursor-not-allowed' : ''}`}
         onClick={() => {
           if (!disabled) {
             page !== 4 ? (
