@@ -31,8 +31,8 @@ const PlanSelectionPage = () => {
           We'll streamline your setup experience accordingly.
         </h6>
       </div>
-      <div className='flex flex-col gap-4 min-w-[25vw] max-lg:w-[45vw] max-sm:w-full'>
-        <div className='flex gap-8 max-xl:flex max-xl:flex-col cursor-pointer'>
+      <div className='flex flex-col gap-4 w-[25vw] max-lg:min-w-[65vw] max-sm:w-full'>
+        <div className='flex gap-8 cursor-pointer'>
           {options.map((opt) => (
             <Option
               key={opt.optionNumber}
