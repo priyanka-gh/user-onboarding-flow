@@ -1,12 +1,36 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Button from './Button';
 import InputField from './InputField';
+import { usePageState, usePageDispatch } from '../context/PageStateContext';
 
 const WorkspaceSetupPage = () => {
-  const [workspaceName, setWorkspaceName] = useState('');
-  const [workspaceUrl, setWorkspaceUrl] = useState('');
+  const dispatch = usePageDispatch();
 
-  const isButtonDisabled = workspaceName === '' || workspaceUrl === '';
+  const {workname, workurl} = usePageState();
+  const [workspaceName, setWorkspaceName] = useState('');
+  const [workspaceUrl, setWorkspaceUrl] = useState('')
+
+  useEffect(() => {
+    if (workname) {
+      setWorkspaceName(workname)
+    }
+    if(workurl){
+      setWorkspaceUrl(workurl)
+    }
+  }, [workname, workurl, dispatch]);
+
+
+  const handleNameChange = (e) => {
+    setWorkspaceName(e.target.value);
+    dispatch({ type: 'SET_WORKSPACE_NAME', payload: e.target.value });
+  };
+
+  const handleUrlChange = (e) => {
+    setWorkspaceUrl(e.target.value);
+    dispatch({ type: 'SET_WORKSPACE_URL', payload: e.target.value });
+  };
+
+  const isButtonDisabled = workspaceName === '';
 
   return (
     <div className='flex flex-col gap-10 font-poppins items-center justify-center'>
@@ -14,11 +38,11 @@ const WorkspaceSetupPage = () => {
         <h1 className='text-2xl font-bold max-md:text-xl'>Let's set up a home for all your work</h1>
         <h6 className='font-medium text-darkerGray'>You can always create another workspace later.</h6>
       </div>
-      <div className='flex flex-col font-semibold text-[14px] text-darkerGraydarkestGray gap-4 w-[25vw] max-md:w-full'>
+      <div className='flex flex-col font-semibold text-[14px] text-darkerGraydarkestGray gap-4 w-[25vw] h-min max-md:w-full'>
         <InputField
           label="Workspace Name"
           placeholder="Eden"
-          onChange={(e) => setWorkspaceName(e.target.value)}
+          onChange={handleNameChange}
           value={workspaceName}
         />
         <div className='flex flex-col gap-2'>
@@ -30,7 +54,7 @@ const WorkspaceSetupPage = () => {
             <input
               placeholder='Example'
               className='p-2 font-normal border-l-2 border-gray focus:outline-none rounded-r-md'
-              onChange={(e) => setWorkspaceUrl(e.target.value)}
+              onChange={handleUrlChange}
               value={workspaceUrl}
             />
           </div>

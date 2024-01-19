@@ -14,7 +14,7 @@ const Onboarding = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center gap-6">
+    <div className="min-h-screen flex flex-col items-center justify-center gap-6 h-[100vh]">
       <div className='flex flex-col items-center justify-center gap-10'>
         <div className='flex gap-2 items-center justify-center max-sm:mt-[2rem]'>
           <img src={logo} alt="" />
