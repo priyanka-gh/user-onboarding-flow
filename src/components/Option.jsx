@@ -5,7 +5,7 @@ import { faUser, faUsers } from '@fortawesome/free-solid-svg-icons';
 const Option = ({ optionNumber, selected, onSelect, title, description }) => {
   return (
     <div
-      className={`flex flex-col p-4 gap-4 rounded-md ${
+      className={`flex flex-col items-start p-4 gap-4 rounded-md ${
         selected ? 'border border-colorPurple' : 'border-2 border-gray'
       }`}
       onClick={() => onSelect(optionNumber)}

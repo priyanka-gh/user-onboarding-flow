@@ -4,9 +4,9 @@ import { PageProvider } from './context/PageStateContext'
 
 const App = () => {
   return (
-    <PageProvider>
+      <PageProvider>
       <Onboarding/>
-    </PageProvider>
+      </PageProvider>
   )
 }
 

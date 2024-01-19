@@ -32,7 +32,7 @@ const PlanSelectionPage = () => {
         </h6>
       </div>
       <div className='flex flex-col text-[14px] gap-4 w-[25vw] max-lg:w-full'>
-        <div className='flex gap-8 max-[400px]:flex max-[400px]:flex-col cursor-pointer'>
+        <div className='flex gap-8  max-[400px]:flex max-[400px]:flex-col cursor-pointer'>
           {options.map((opt) => (
             <Option
               key={opt.optionNumber}
