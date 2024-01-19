@@ -9,7 +9,7 @@ const FormPage = () => {
   const {page} = usePageState();
 
   return (
-    <div>
+    <div className=''>
         {page === 1 && <PersonalDetailsPage />}
         {page === 2 && <WorkspaceSetupPage />}
         {page === 3 && <PlanSelectionPage />}

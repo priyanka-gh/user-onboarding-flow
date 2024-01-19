@@ -15,8 +15,7 @@ const Stepper = () => {
                 <li className="flex-1 ">
                     <div
                     className={`w-[25px] h-[0.09rem] transition-all duration-500 
-                        max-[330px]:w-[15px]
-                        max-[230px]:w-[10px] ${
+                        max-sm:w-[15px] ${
                         pageNumber <= page
                         ? 'bg-colorPurple'
                         : 'bg-lightGray'

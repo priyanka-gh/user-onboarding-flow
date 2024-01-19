@@ -38,7 +38,7 @@ const WorkspaceSetupPage = () => {
         <h1 className='text-3xl text-center font-bold max-sm:text-xl'>Let's set up a home for all your work</h1>
         <h6 className='font-medium text-darkerGray'>You can always change them later.</h6>
       </div>
-      <div className='flex flex-col font-semibold text-[14px] text-darkerGraydarkestGray gap-4 w-[25vw] max-lg:w-full'>
+      <div className='flex flex-col font-semibold text-[14px] text-darkerGraydarkestGray gap-4 min-w-[25vw] max-lg:w-[45vw] max-sm:w-full'>
         <InputField
           label="Workspace Name"
           placeholder="Eden"
