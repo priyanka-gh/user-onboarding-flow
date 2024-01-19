@@ -24,15 +24,15 @@ const PlanSelectionPage = () => {
   
 
   return (
-    <div className='flex flex-col font-poppins items-center justify-center gap-10'>
-      <div className='flex flex-col items-center justify-center'>
-        <h1 className='text-2xl font-bold'>How are you planning to use Eden?</h1>
+    <div className='flex flex-col font-poppins items-center justify-center gap-7'>
+      <div className='flex flex-col items-center justify-center gap-2'>
+        <h1 className='text-4xl font-bold'>How are you planning to use Eden?</h1>
         <h6 className='font-medium text-darkerGray'>
           We'll streamline your setup experience accordingly.
         </h6>
       </div>
-      <div className='flex flex-col text-[14px] gap-4 w-[25vw] max-lg:w-full'>
-        <div className='flex gap-8  max-[400px]:flex max-[400px]:flex-col cursor-pointer'>
+      <div className='flex flex-col  gap-4 w-[25vw] max-lg:w-full'>
+        <div className='flex gap-8 max-[400px]:flex max-[400px]:flex-col cursor-pointer'>
           {options.map((opt) => (
             <Option
               key={opt.optionNumber}

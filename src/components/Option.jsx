@@ -5,7 +5,7 @@ import { faUser, faUsers } from '@fortawesome/free-solid-svg-icons';
 const Option = ({ optionNumber, selected, onSelect, title, description }) => {
   return (
     <div
-      className={`flex flex-col items-start p-4 gap-4 rounded-md ${
+      className={`flex flex-col items-start text-[14px] p-4 gap-6 rounded-md ${
         selected ? 'border border-colorPurple' : 'border-2 border-gray'
       }`}
       onClick={() => onSelect(optionNumber)}
@@ -21,8 +21,10 @@ const Option = ({ optionNumber, selected, onSelect, title, description }) => {
           className={`text-[20px] ${selected ? 'text-colorPurple' : 'text-darkestGray'}`}
         />
       )}
-      <h6 className='font-bold text-darkestGray'>{title}</h6>
-      <h6 className='text-darkerGray'>{description}</h6>
+      <div className='flex flex-col gap-2'>
+        <h6 className='font-bold text-darkestGray'>{title}</h6>
+        <h6 className='text-darkerGray'>{description}</h6>
+      </div>
     </div>
   );
 };
