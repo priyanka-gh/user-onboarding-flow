@@ -33,12 +33,12 @@ const WorkspaceSetupPage = () => {
   const isButtonDisabled = workspaceName === '';
 
   return (
-    <div className='flex flex-col gap-10 font-poppins items-center justify-center'>
+    <div className='flex flex-col gap-9 font-poppins items-center justify-center'>
       <div className='flex flex-col items-center justify-center gap-4'>
-        <h1 className='text-4xl font-bold max-md:text-xl'>Let's set up a home for all your work</h1>
+        <h1 className='text-3xl font-bold  max-lg:text-xl'>Let's set up a home for all your work</h1>
         <h6 className='font-medium text-darkerGray'>You can always create another workspace later.</h6>
       </div>
-      <div className='flex flex-col font-semibold text-[14px] text-darkerGraydarkestGray gap-4 w-[25vw] h-min max-md:w-full'>
+      <div className='flex flex-col font-semibold text-[14px] text-darkerGraydarkestGray gap-4 w-[25vw] h-min max-lg:w-full'>
         <InputField
           label="Workspace Name"
           placeholder="Eden"

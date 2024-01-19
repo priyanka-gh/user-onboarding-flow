@@ -14,15 +14,15 @@ const Onboarding = () => {
   };
 
   return (
-    <div className="h-[100vh] flex flex-col items-center justify-center gap-6">
-      <div className='flex flex-col items-center justify-center gap-10'>
-        <div className='flex gap-2 items-center justify-center max-sm:mt-[2rem]'>
+    <div className="h-[100vh] grid place-items-center place-content-center">
+      <div className='flex flex-col items-center justify-center gap-10 fixed top-20'>
+        <div className='flex gap-2 items-center justify-center '>
           <img src={logo} alt="" />
           <h1 className='text-2xl font-bold font-poppins'>Eden</h1>
         </div>
         <Stepper currentPage={currentPage} totalPages={totalPages}/>
       </div>
-      <div className="p-8 flex flex-col">
+      <div className="p-8 flex flex-col relative top-14">
         <FormPage nextPage={nextPage}/>
       </div>
     </div>
