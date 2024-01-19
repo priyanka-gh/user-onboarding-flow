@@ -37,7 +37,7 @@ const PersonalDetailsPage = () => {
         <h1 className='text-3xl text-center font-bold max-sm:text-xl'>Welcome! First things first...</h1>
         <h6 className='font-medium text-darkerGray'>You can always change them later.</h6>
       </div>
-      <div className='flex flex-col font-semibold text-[14px] text-darkerGraydarkestGray gap-4 w-[25vw] max-sm:w-full'>
+      <div className='flex flex-col font-semibold text-[14px] text-darkerGraydarkestGray gap-4 w-[25vw] max-lg:w-full'>
         <InputField label="Full Name" placeholder="Steve Jobs" onChange={handleNameChange} value={fullName}/>
         <InputField label="Display Name" placeholder="Steve" onChange={handleDisplayNameChange} value={displayName}/>
         <Button disabled={isButtonDisabled} />
