@@ -8,7 +8,7 @@ const Button = ({ disabled }) => {
   return (
     <div>
       <button
-        className={`text-white font-normal bg-colorPurple p-3 min-w-full rounded-md ${disabled ? 'opacity-50 cursor-not-allowed' : ''}`}
+        className={`text-white text-base font-normal bg-colorPurple p-3 min-w-full rounded-md ${disabled ? 'opacity-50 cursor-not-allowed' : ''}`}
         onClick={() => {
           if (!disabled) {
             page !== 4 ? (
