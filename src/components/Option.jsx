@@ -6,7 +6,7 @@ const Option = ({ optionNumber, selected, onSelect, title, description }) => {
   return (
     <div
       className={`flex flex-col items-start text-[14px] p-5 gap-4 rounded-md ${
-        selected ? 'border border-colorPurple' : 'border-2 border-gray'
+        selected ? 'border-2 border-colorPurple' : 'border-2 border-gray'
       }`}
       onClick={() => onSelect(optionNumber)}
     >
